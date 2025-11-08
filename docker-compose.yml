@@ -10,7 +10,7 @@ services:
       - "2181:2181"
 
   kafka1:
-    image: docker.arvancloud.ir/confluentinc/cp-kafka:7.3.3
+    image: confluentinc/cp-kafka:7.3.3
     container_name: kafka1
     depends_on:
       - zookeeper1
@@ -36,7 +36,7 @@ services:
       - "2182:2181"
 
   kafka2:
-    image: docker.arvancloud.ir/confluentinc/cp-kafka:7.3.3
+    image: confluentinc/cp-kafka:7.3.3
     container_name: kafka2
     depends_on:
       - zookeeper2
@@ -62,7 +62,7 @@ services:
       - "2183:2181"
 
   kafka3:
-    image: docker.arvancloud.ir/confluentinc/cp-kafka:7.3.3
+    image: confluentinc/cp-kafka:7.3.3
     container_name: kafka3
     depends_on:
       - zookeeper3
